@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file img/*)",
+      "Bash(python3 -c \"import playwright; print\\('pw ok'\\)\")",
+      "Bash(python3 -c \"import PIL; print\\('pil ok'\\)\")"
+    ]
+  }
+}

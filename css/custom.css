@@ -1,0 +1,237 @@
+/* Personnalisation du site de Me Fedi Ghali (s'ajoute au thème, sans modifier style.css) */
+
+/* Marque */
+.brand-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.brand-sub {
+  font-size: .8rem;
+  letter-spacing: .5px;
+  white-space: normal;
+  text-align: center;
+}
+
+.brand-mobile .brand-name {
+  font-size: 1.6rem;
+}
+
+/* Le menu français est plus long que celui du thème */
+.navbar-light .navbar-nav .nav-link {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 16px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding: 12px 15px;
+  }
+}
+
+/* Titres : tailles adaptées à des phrases plus longues */
+.hero-kicker {
+  font-size: clamp(.85rem, 2.2vw, 1.3rem);
+  letter-spacing: 3px;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5.5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.page-title {
+  font-size: clamp(2rem, 6vw, 3.75rem);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.section-title {
+  font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+  line-height: 1.2;
+}
+
+/* Le fond du thème contient une photo de billets de banque : on la remplace */
+.bg-appointment {
+  background: linear-gradient(rgba(55, 55, 63, 0.7), rgba(55, 55, 63, 0.7)), url(../img/carousel-2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* Portrait */
+.portrait img {
+  display: block;
+  border: 1px solid #e4dfd5;
+  border-bottom: 0;
+}
+
+.portrait figcaption {
+  font-weight: 600;
+}
+
+/* Cartes */
+.service-card {
+  min-height: 330px;
+}
+
+.info-card,
+.pub-card {
+  border: 1px solid #e4dfd5;
+}
+
+.icon-box-sm {
+  width: 56px;
+  height: 56px;
+}
+
+.pub-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.pub-meta {
+  color: #7a6948;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.pub-card h5 a:hover {
+  color: #B49C73 !important;
+}
+
+/* Listes */
+.check-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 6px;
+}
+
+.check-list li::before {
+  content: "\f00c";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #B49C73;
+  font-family: "Font Awesome 5 Free";
+  font-size: .85rem;
+  font-weight: 900;
+}
+
+/* Parcours */
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding-left: 24px;
+  border-left: 2px solid #B49C73;
+}
+
+.timeline li {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #37373F;
+  border: 2px solid #B49C73;
+}
+
+.timeline-date {
+  color: #7a6948;
+  font-size: .85rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Informations d'exemple, à valider avant la mise en ligne */
+.exemple {
+  border-bottom: 2px dashed #e0a800;
+}
+
+.exemple::after,
+.exemple-tag {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 10px;
+  background: #ffc107;
+  color: #37373F;
+  font-family: "Montserrat", sans-serif;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+.exemple::after {
+  content: "Exemple";
+  margin-left: 6px;
+}
+
+.exemple-note {
+  background: #fff8e1;
+  border-left: 4px solid #ffc107;
+  padding: 12px 16px;
+  font-size: .9rem;
+}
+
+.legal-note {
+  border-top: 1px solid #e4dfd5;
+  padding-top: 16px;
+  font-size: .9rem;
+  font-style: italic;
+}
+
+/* Bouton WhatsApp flottant */
+.whatsapp-float {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  font-size: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+}
+
+.whatsapp-float:hover {
+  color: #fff;
+  background: #1eb958;
+}
+
+/* Le carrousel du thème place son texte trop près des bords sur mobile */
+@media (max-width: 767.98px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-caption {
+    left: 0;
+    right: 0;
+  }
+}
