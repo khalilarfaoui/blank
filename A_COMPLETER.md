@@ -19,10 +19,11 @@ Une fois une information validée, remplace le texte et retire la balise autour 
 | Questions fréquentes | `service.html` | Texte d'exemple |
 | Texte des mentions légales | `mentions-legales.html` | Modèle à faire vérifier |
 
-## Publications fictives
+## Publications
 
-Les 6 articles et leurs dates sont inventés. Ils doivent être relus ou remplacés par Me Ghali :
-`publications.html`, les 3 cartes de `index.html` et les 6 fichiers `publication-*.html`.
+Les cinq publications fournies et les images `img/pub1.jpeg` à `img/pub5.jpeg` remplacent les cartes fictives de l’accueil et de la rubrique Publications. Les dates non fournies ne sont pas affichées. Le forum d’Alger est daté des 24 et 25 janvier 2023 d’après le texte transmis.
+
+Les six anciens fichiers `publication-*.html` contiennent encore des articles fictifs ; ils ne sont plus liés depuis l’accueil ou la rubrique Publications.
 
 ## À confirmer avec Me Ghali
 

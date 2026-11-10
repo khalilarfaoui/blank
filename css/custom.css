@@ -235,3 +235,18 @@
     right: 0;
   }
 }
+
+/* Publications photographiques et textes multilingues */
+.publication-intro { max-width: 720px; }
+.publication-card { overflow: hidden; scroll-margin-top: 24px; }
+.publication-image-link { display: block; position: relative; background: #f1eee8; }
+.publication-image { display: block; width: 100%; height: 300px; object-fit: contain; }
+.publication-image-label { position: absolute; bottom: 10px; right: 10px; padding: 5px 10px; border-radius: 3px; background: #252525; color: #fff; font-size: .75rem; }
+.publication-image-link:focus-visible { outline: 3px solid #B49C73; outline-offset: -3px; }
+.publication-copy { line-height: 1.8; overflow-wrap: anywhere; }
+.publication-copy [lang="ar"] { font-family: Tahoma, Arial, sans-serif; text-align: right; line-height: 2; font-size: 1.1rem; }
+.publication-copy p:last-child { margin-bottom: 0; }
+.publication-card:target { outline: 2px solid #B49C73; outline-offset: 4px; }
+@media (max-width: 575.98px) {
+  .publication-image { height: 260px; }
+}
